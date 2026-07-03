@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PythonQt-OpenCV</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="SourceImageLabel">
+      <property name="text">
+       <string>Source Image</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="TargetImageLabel">
+      <property name="text">
+       <string>Result Image</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+    <addaction name="actionRecovery"/>
+    <addaction name="actionClear"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuImageProcess">
+    <property name="title">
+     <string>图像处理</string>
+    </property>
+    <addaction name="actionGray"/>
+    <addaction name="actionBlur"/>
+    <addaction name="actionCanny"/>
+    <addaction name="actionThreshold"/>
+   </widget>
+   <widget class="QMenu" name="menuFaceDetection">
+    <property name="title">
+     <string>人脸检测</string>
+    </property>
+    <addaction name="actionFaceDetect"/>
+   </widget>
+   <widget class="QMenu" name="menuImageRetrieval">
+    <property name="title">
+     <string>图像检索</string>
+    </property>
+    <addaction name="actionImageRetrieval"/>
+   </widget>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>视频</string>
+    </property>
+    <addaction name="actionOpenCamera"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuImageProcess"/>
+   <addaction name="menuFaceDetection"/>
+   <addaction name="menuImageRetrieval"/>
+   <addaction name="menuVideo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpenFile">
+   <property name="text">
+    <string>OpenFile</string>
+   </property>
+  </action>
+  <action name="actionRecovery">
+   <property name="text">
+    <string>Recovery</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionGray">
+   <property name="text">
+    <string>灰度化</string>
+   </property>
+  </action>
+  <action name="actionBlur">
+   <property name="text">
+    <string>模糊</string>
+   </property>
+  </action>
+  <action name="actionCanny">
+   <property name="text">
+    <string>边缘检测</string>
+   </property>
+  </action>
+  <action name="actionThreshold">
+   <property name="text">
+    <string>二值化</string>
+   </property>
+  </action>
+  <action name="actionFaceDetect">
+   <property name="text">
+    <string>人脸检测</string>
+   </property>
+  </action>
+  <action name="actionImageRetrieval">
+   <property name="text">
+    <string>图像检索</string>
+   </property>
+  </action>
+  <action name="actionOpenCamera">
+   <property name="text">
+    <string>打开摄像头</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
